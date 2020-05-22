@@ -3,7 +3,7 @@
 // @include  https://www.testportal.pl/*
 // @run-at   document-start
 // @grant    none
-// @version  2.0
+// @version  2.1
 // @updateURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.js
 // ==/UserScript==
 
