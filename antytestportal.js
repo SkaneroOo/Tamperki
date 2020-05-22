@@ -4,7 +4,7 @@
 // @run-at   document-start
 // @grant    none
 // @version  2.0
-// @updateURL  https://github.com/SkaneroOo/Tamperki/blob/master/antytestportal.js
+// @updateURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.js
 // ==/UserScript==
 
 
