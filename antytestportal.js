@@ -4,7 +4,7 @@
 // @run-at   document-start
 // @grant    none
 // @version  1.0
-// @updateURL  
+// @updateURL  https://github.com/SkaneroOo/Tamperki/blob/master/antytestportal.js
 // ==/UserScript==
 
 //window.addEventListener('load', function() {
