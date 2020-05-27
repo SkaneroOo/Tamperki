@@ -3,13 +3,25 @@
 // @include  https://www.testportal.pl/*
 // @run-at   document-start
 // @grant    none
-// @version  2.1
+// @version  3.0
 // @updateURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.js
 // ==/UserScript==
 
+const PATCHES = {
+    isMatching: () => false;
+};
 
+document.hasFocusIn = () => true;
+document.SetFocus = () => true;
+onBlurHandler = () => null;
 window.onerror = () => {};
-document.hasFocus = () => true;
+
+
+while 1 {
+    window.onerror = () => {};
+    document.forms["questionForm"]["wb"].value = 0;
+    document.focus();
+};
 
 var s = document.createElement('script');
 s.src = chrome.extension.getURL('script.js');
@@ -17,4 +29,4 @@ s.src = chrome.extension.getURL('script.js');
 
 window.addEventListener("contextmenu", function(e){
      e.stopPropagation()
-}, true);
+}, true)
