@@ -4,7 +4,7 @@
 // @run-at   document-start
 // @grant    none
 // @version  3.0
-// @updateURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.js
+// @updateURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.user.js
 // ==/UserScript==
 
 const PATCHES = {
