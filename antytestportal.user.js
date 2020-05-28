@@ -1,10 +1,8 @@
 // ==UserScript==
 // @name     Anty testportal
 // @include  https://www.testportal.pl/*
-// @include  https://www.google.pl/*
-// @include  https://www.google.com/*
 // @run-at   document-start
-// @version  3.0
+// @version  3.1
 // @grant unsafeWindow
 // @require http://code.jquery.com/jquery-latest.js
 // @updateURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.user.js
