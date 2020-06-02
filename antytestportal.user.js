@@ -5,7 +5,7 @@
 // @version  4.0
 // @grant unsafeWindow
 // @require http://code.jquery.com/jquery-latest.js
-// @updateURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.user.js
+// @downloadURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.user.js
 // ==/UserScript==
 
 
