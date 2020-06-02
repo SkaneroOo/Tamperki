@@ -2,7 +2,7 @@
 // @name     Anty testportal
 // @include  https://www.testportal.pl/*
 // @run-at   document-start
-// @version  4.0
+// @version  4.3
 // @grant unsafeWindow
 // @require http://code.jquery.com/jquery-latest.js
 // @downloadURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.user.js
