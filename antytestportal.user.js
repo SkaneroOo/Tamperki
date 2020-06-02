@@ -2,11 +2,35 @@
 // @name     Anty testportal
 // @include  https://www.testportal.pl/*
 // @run-at   document-start
-// @version  3.1
+// @version  4.0
 // @grant unsafeWindow
 // @require http://code.jquery.com/jquery-latest.js
 // @updateURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.user.js
 // ==/UserScript==
+
+
+
+function b_unfix() {
+    unsafeWindow.b = function(str){return 0;};
+}
+
+
+function b_fix() {
+    unsafeWindow.b = function(c,d){c=c-0x0;var e=a[c];return e;};
+}
+
+function setStrikesON(){
+    unsafeWindow.b = function(c,d){c=c-0x0;var e=a[c];return e;};
+    document.getElementsByClassName("Strikes_OFF")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("Strikes_ON")[0].style.backgroundColor = "green";
+}
+function setStrikesOFF(){
+    unsafeWindow.b = function(str){return 0;};
+    document.getElementsByClassName("Strikes_OFF")[0].style.backgroundColor = "green";
+    document.getElementsByClassName("Strikes_ON")[0].style.backgroundColor = "red";
+}
+
+
 
 
 (function() {
@@ -33,14 +57,11 @@
     button.className = "Strikes_OFF"
     button.innerHTML = text;
     // Settin function for button when it is clicked.
-    button.onclick = selectReadFn;
+    button.onclick = setStrikesOFF;
     Object.keys(cssObj).forEach(key => (btnStyle[key] = cssObj[key]));
     return button;
   }
 
-  function selectReadFn() {
-    unsafeWindow.b = function(str){return 0;};
-  }
 })();
 
 
@@ -74,13 +95,10 @@
     button.className = "Strikes_ON"
     button.innerHTML = text;
     // Settin function for button when it is clicked.
-    button.onclick = selectReadFn;
+
+    button.onclick = setStrikesON;
     Object.keys(cssObj).forEach(key => (btnStyle[key] = cssObj[key]));
     return button;
-  }
-
-  function selectReadFn() {
-    unsafeWindow.b = function(c,d){c=c-0x0;var e=a[c];return e;};
   }
 })();
 
@@ -88,52 +106,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-
-
-//if (1){
-//    document.getElementsByClassName("Strikes_OFF")[0].click();}
-setTimeout(function() {
+window.addEventListener("load", () => {
     document.getElementsByClassName("Strikes_OFF")[0].click();
-}, 1000)
-
- if (startingRemainingTimeInMs == null) {
-            setTimeout(function() {
-    document.getElementsByClassName("Strikes_ON")[0].click();
-}, 10)}
-
-
-
-
-
-/*
-
-
-document.b = function(str) {};
-sleep(2000);
-var a = 0
-var origHasFocus = a;
-document.UpdateContent = function(str) {
-
-     alert("And I'm in your floats!");
-     return 0;
-
-}
-*/
-
-
-
-
-/*
-startingRemainingTimeInMs = 1000000000;
-document.hasFocus = function(str) {
-
-     alert("And I'm in your floats!");
-     return 0;
-
-}
-*/
-//document.hasFocus = function() {return true};
-
-
-
+  });
 
