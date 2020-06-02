@@ -2,22 +2,11 @@
 // @name     Anty testportal
 // @include  https://www.testportal.pl/*
 // @run-at   document-start
-// @version  4.1
+// @version  4.2
 // @grant unsafeWindow
 // @require http://code.jquery.com/jquery-latest.js
 // @downloadURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.user.js
 // ==/UserScript==
-
-
-
-function b_unfix() {
-    unsafeWindow.b = function(str){return 0;};
-}
-
-
-function b_fix() {
-    unsafeWindow.b = function(c,d){c=c-0x0;var e=a[c];return e;};
-}
 
 function setStrikesON(){
     unsafeWindow.b = function(c,d){c=c-0x0;var e=a[c];return e;};
