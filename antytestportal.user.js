@@ -2,7 +2,7 @@
 // @name     Anty testportal
 // @include  https://www.testportal.pl/*
 // @run-at   document-start
-// @version  4.3
+// @version  4.4
 // @grant unsafeWindow
 // @require http://code.jquery.com/jquery-latest.js
 // @downloadURL  https://raw.githubusercontent.com/SkaneroOo/Tamperki/master/antytestportal.user.js
@@ -21,16 +21,17 @@ function setStrikesOFF(){
 }
 
 
-
+/*
 function b_fix(){
     unsafeWindow.b = function(c,d){c=c-0x0;var e=a[c];return e;};
-    updateCt();
+    hvthrHgC();
     return submitForm('questionForm');
 }
 
 window.addEventListener("load", () => {
     document.getElementsByClassName("mdc-button mdc-button--outlined")[0].onclick = b_fix;
   });
+*/
 
 (function() {
   window.addEventListener("load", () => {
